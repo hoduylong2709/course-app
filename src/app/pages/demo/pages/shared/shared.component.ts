@@ -12,7 +12,9 @@ export class SharedComponent implements OnInit {
   isInline: boolean;
   regexErrors = regexErrors;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder) {
+    this.isInline = true;
+  }
 
   ngOnInit(): void {
     this.form = this.fb.group({
