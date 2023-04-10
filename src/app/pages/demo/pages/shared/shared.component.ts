@@ -29,6 +29,13 @@ export class SharedComponent implements OnInit {
           ],
         },
       ],
+      password: [
+        null,
+        {
+          updateOn: 'blur',
+          validators: [Validators.required],
+        },
+      ],
     });
   }
 
