@@ -5,6 +5,8 @@ import { FormFieldModule } from './form-field/form-field.module';
 import { PasswordModule } from './password/password.module';
 import { SelectModule } from './select/select.module';
 import { CheckboxesModule } from './checkboxes/checkboxes.module';
+import { DateModule } from './date/date.module';
+import { DateRangeModule } from './date-range/date-range.module';
 
 @NgModule({
   declarations: [],
@@ -15,6 +17,8 @@ import { CheckboxesModule } from './checkboxes/checkboxes.module';
     PasswordModule,
     SelectModule,
     CheckboxesModule,
+    DateModule,
+    DateRangeModule,
   ],
   exports: [
     InputModule,
@@ -22,6 +26,8 @@ import { CheckboxesModule } from './checkboxes/checkboxes.module';
     PasswordModule,
     SelectModule,
     CheckboxesModule,
+    DateModule,
+    DateRangeModule,
   ],
 })
 export class ControlsModule {}
